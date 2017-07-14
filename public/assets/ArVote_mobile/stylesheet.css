@@ -1,0 +1,113 @@
+/*CSS Stylesheet */
+
+body {  height: 100%; 
+        margin: 0;
+}
+ul, ol {list-style: none;}
+.clearfix {clear: both;}
+
+
+/*
+nav ul li {
+    min-width:60px;
+    border:1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+article {
+    width:220px;
+    height:300px;
+    border: 1px solid black;
+    background-color: #ccc;
+}
+#flexwrapper {
+    display:flex;
+    justify-content: space-around;
+}
+nav ul {
+    display:flex;
+    justify-content: center;
+    padding-left: 0;
+}
+nav ul > * {
+/*flex: 1 0 auto;   
+}
+*/
+
+#container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ccc;
+/*    min-height: 70px;*/
+    zoom:150%;
+   
+}
+
+
+p{
+    text-align: center;
+    padding-left: 65px;
+    font-size: 40px;
+    color: rgba(66,175,250, 1.0);
+   }
+.twitter img {
+    display: inline;
+    height: 110px;
+    width: 110px;
+    position: fixed;
+    top:6%;
+    right:6%;
+    border-radius: 200px;
+    z-index: 99999999;
+    border:2px solid white;
+}
+.twitter img:hover {
+    box-shadow: 3px 3px 4px grey;
+}
+.q1{
+    display: inline-block;
+    width: 100%;
+     padding-left: 1%;
+    padding-right: 1%;
+/*    max-width: 350px;*/
+    padding-bottom: 1%;  
+}
+
+.q3{
+    display: inline-block;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+/*    max-width: 350px;*/
+    padding-bottom: 1%;  
+}
+.q2 {
+    display: inline-block;
+  width: 100%;
+    padding-right: 1%;
+     padding-left: 1%;
+/*       max-width: 350px;*/
+      padding-bottom: 1%;
+}
+.q4 {
+    display: inline-block;
+    width: 100%;
+    padding-right: 1%;
+     padding-left: 1%;
+/*       max-width: 350px;*/
+      padding-bottom: 1%;
+}
+
+@media(min-width: 1700px){
+    #container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ccc;
+/*    min-height: 70px;*/
+    zoom:300%;
+   
+}
+}

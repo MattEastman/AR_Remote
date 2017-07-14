@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Activist TV | NYC</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link type="text/css" rel="stylesheet" href="assets/css/styles.css" />
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/revealjs/css/reveal.css">
+	<link rel="stylesheet" href="assets/revealjs/css/theme/black.css" id="theme">
+    
+    <!--Add support for earlier versions of Internet Explorer -->
+<!--
+	[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]
+    
+-->
+    <!-- Including the JS libraries that we use -->
+	<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+	<!-- Reveal.js is for presentations -->
+	<script src="assets/revealjs/lib/js/head.min.js"></script>
+	<script src="assets/revealjs/js/reveal.js"></script>
+
+	<!-- Socket.io library -->
+	<script src="/socket.io/socket.io.js"></script>
+
+	<!-- Main JavaScript file -->
+	<script src="assets/js/script.js"></script>
+  
+    <script src="/public/assets/js/isInViewport.js"></script>
+    <script src="/public/assets/js/jquery-2.1.3.min.js"></script>
+    
+    
+  <!-- ****Screen redirects ************************************************************************************************************  -->  
+<!--    https://github.com/hakimel/reveal.js more info-->
+    <!-- note: auto slide feature <section data-autoslide="3000"> -->      
+    
+        <!--    Good Screen source https://visual.ly/apple-devices-resolutions
+     send to remote for 1490 and up>  
+      
+<script type="text/javascript">
+            if (screen.width >= 1490) {
+            document.location = "http://apple.com";
+}
+    </script>
+
+  send to small computers screens 790 - 1490
+<script type="text/javascript">
+            if (screen.width >= 790) {
+            document.location = "http://batman.com";
+}
+ </script>
+
+send Klynt tablet for screens 701 to 790
+    <script type="text/javascript">
+            if (screen.width >= 740) {
+            document.location = "http://elon.edu";
+}
+ </script>
+    
+
+ send to remote for mobile remote
+<script type="text/javascript">
+            if (screen.width <= 740) {
+            document.location = "http://espn.com";
+}
+ </script>
+
+<!-- **** Login ************************************************************************************************************  -->
+
+    </head>
+<body>
+	<form class="login">
+		<span>
+            <h4>Use your phone as a remote @ActivistReport.com</h4>
+            <h5>Password: Enter Activism</h5>
+                    </span>
+		<input type="text" placeholder="Let's Go."/>
+		<input type="submit" value="➡" />
+	</form>
+
+<!-- ****Title & Nav************************************************************************************************************  -->
+
+    <div class="reveal blurred">
+    <h2> The Activist Report </h2>
+        <h3> NYC: Do modern hippies shave?</h3>
+        <span id ="subhead"><h3><a href="http://peoplesclimate.org/" target="_blank">350.org's People's Climate Change March</a></h3></span>
+    <span id="nav">
+        <div class="nav">
+            <ul>
+                <a href="assets/ArVote_mobile/index.html" target="_blank"><li><h6>Vote</h6></li></a>
+                <a href="https://www.stringwire.com/watch/6ezA" target="_blank"> <li><h6>Live</h6></li></a>
+                <div class="Aklynt"><a href="https://www.zeemaps.com/map?group=742565" target="_blank"><li><h6>Map</h6></li></a></div>
+                <!--send to mobile Klynt version-->
+                <a href="http://activistreport.com/#NYC_Stand_Up" target="_blank"> <li><h6>More</h6></li></a>
+                          </ul>
+        </div>
+    </span>
+    
+<!-- ****Buttons ************************************************************************************************************  -->
+    
+    <span id="EagleText"><h6>Eagle Eye</h6></span>
+    <div id="toggleBack"></div>
+<div class="key"> 
+<!--        <h6>Key</h6>-->
+            <ul>
+                <li><h4><a>Overview  = Enter Key</a></h4></li>
+                <li><h4><a>Next = Arrow Keys</a></h4></li>
+<!--                <li><h4><a>Pause = B</a></h4></li>-->
+            </ul>
+    </div>
+<!--  Eagle button switch to idoc mode/Klynt site  -->
+      <a href="#">
+          <div class="view">
+              <img src="assets/img/eaglehead_TV.png">
+          </div>
+      </a>
+<!--    overview eye - skip to chapter-->
+    <a href="remote.activistreport.com:8080/#/2/1" target="_blank">
+        <div class="view2">
+          <img src="assets/img/eye.svg">
+        </div>
+    </a>
+<!--  Social Media   --------------------->
+        <div class="social">
+            <a href="https://twitter.com/ActivistReport" target="_blank" >
+            <img src="/assets/img/Twitter-icon.png"></a>
+        </div>
+        <div class="social1">
+                <a href="https://www.facebook.com/ActivistReport" target="_blank">
+             <img src="assets/img/fb2.png"></a>
+        </div>                      
+<!--Latest Reports-->
+<!--
+    <div class="reports">
+    <h6>Reports</h6>
+        <ul>
+            <li><h4><a href="http://bit.ly/1EXNfLD">NYC : Climate Change March</a></h4></li>
+            <li><h4><a href="#">Ecuador : Sustainabeer </a></h4></li>
+            <li><h4><a href="#">FLA : Gay Rights Roadtrip</a></h4></li>
+        </ul>
+    </div>
+-->
+<!--1Latest Reports for hoizontal Phone view -----------------
+     <small>
+         <ul>
+            <a href="http://bit.ly/1EXNfLD" target="_blank"><li><h4>More Reports</h4></li></a>
+            <a href="http://bit.ly/1EXNfLD" target="_blank"><li><h4>About "The Activist"</h4></li></a>
+            <a href="http://bit.ly/1EXNfLD" target="_blank"><li><h4>Vote</h4></li></a>
+            <a href="https://www.stringwire.com/watch/6ezA" target="_blank"><li><h4>Live Stream</h4></li></a>
+         </ul>
+<!-- 2idea to list reports.. decided to go against that and insted list other things. 
+         <ul> 
+             <a href="http://bit.ly/1EXNfLD"><li><h5>NYC : Climate Change March</h5></li></a>
+            <li><h5><a href="#">Ecuador : Sustainabeer </a></h5></li>
+            <li><h5><a href="#">FLA : Gay Rights Roadtrip</a></h5></li>
+         </ul>
+    </small>
+--> 
+<!--twitter-->
+    <div class="twitter">
+        <a class="twitter-timeline" data-border-color="#42affa" href="https://twitter.com/ActivistReport" data-widget-id="343483580850266112">Tweets by @ActivistReport</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
+    </div>
+    
+<!-- **** Slides  ************************************************************************************************************  -->
+
+    <div class="slides">
+        <!--2Intro Music Video
+    <section>-->
+        <section class="backGif" data-background="http://mattheweastman.com/images/busGifSm.gif">
+            <h1> Eagle Eye TV</h1>
+                <!-- <small><a href="http:activistreport.com">Activist Reports</a></small>-->
+                <div id="eagle"> 
+                   <iframe width="1700px" height="1200px" src="http://in.fm/embed/MQmlNM?publisherID=UDTy3O" frameborder="0"></iframe>
+                </div>
+        </section>
+    <!--live view Shit-auto plays
+            <section>
+                <h1> Live Stream </h1>
+                    <div class="string">
+                        <iframe width="1700px" height="1200px" src='https://www.stringwire.com/embed/6ezA' frameborder='0' allowfullscreen</iframe>
+                    </div>
+            </section>
+    </section>-->
+      
+<!--2 Explain Background------------------->
+    <section>
+            <section data-autoslide="22000" data-background="assets/revealjs/css/eagleback2.png">
+                <h1>Mobile Remote</h1>  
+        <!--browser info    -->
+                </section> 
+            <section data-autoslide="22000" data-background="assets/revealjs/css/eagleback2.png">
+                <h1>skip ahead or I'll explain Controls - Mobile, Toggle, Symbols and beyond</h1>  
+                </section>
+        <!--Voting-->
+            <section data-autoslide="222000" data-background="assets/revealjs/css/eagleback2.png">
+                <!--<h1>Vote</h1>-->
+                    <iframe width="1920" height="1114" src="assets/ArVote/index.html" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>             
+            </section>  
+            <section data-autoslide="222000" data-background="assets/revealjs/css/eagleback2.png">
+                <h1>Archive</h1>  
+                    <iframe width="1920" height="1114" src="http://activistreport.com/index.html" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe> 
+                </section> 
+    </section>
+    
+<!--3 -->
+     <section>
+            <section data-autoslide="22000" data-background="assets/revealjs/css/eagleback2.png">
+                <h1>Scene Selection</h1>  
+            </section> 
+            <section data-autoslide="22000" data-background="assets/revealjs/css/eagleback2.png">
+                <h1>Secret Stuff</h1>  
+            </section>
+    </section>
+        
+<!--4 NYC story start/Me-->
+        <section>  
+            <section data-background-transition="concave" data-autoslide="218000" data-background="assets/img/busGifSm.gif">
+                <h1><a href="http://localhost:8080/#/7">Activist Report: NYC</a></h1>
+                    <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/R53CZ7YpM7M?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                    </iframe>     
+            </section>
+        <section data-background-transition="concave" data-autoslide="218000" data-background="assets/revealjs/css/eagleback2.png">
+            <h1><a href="http://localhost:8080/#/7">Activist Report: NYC</a></h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/R53CZ7YpM7M?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe>
+        </section>
+        <section data-autoslide="25000" > 
+            <h1>NYC: Behind the Scenes</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/uencx8ZqV8w?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+        <section data-autoslide="14000"> 
+              <h1>NYC: Behind the Scenes (March)</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/k6kfWMJ1MLA?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+        <section data-autoslide="27000"> 
+            <h1>NYC: Behind the Scenes (Music)</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/uogkOru5r1I?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+        <section data-autoslide="31000">
+             <h1>NYC: Behind the Scenes (Selfies)</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/o_wwI5JK3TQ?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>  
+    <!--5 NYC story Hobo-->
+<section>  
+        <section data-autoslide="80000">
+            <h1>Matthew Silver Interview</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/vQDPg5TzDH4?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe>
+        </section>
+        <section data-autoslide="133000"> 
+            <h1>Hobo or Performer?</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/AWwvsPj1Rek?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>
+            
+    <!--4 Wizzard-->
+<section>  
+        <section data-autoslide="46000">
+            <h1>Don't Smoke Meth Kids</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/eeNBpgixPCc?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>            
+            
+<!--6budda-->
+<section>  
+        <section data-autoslide="84000">
+            <h1>This dude was Awesome.</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/0Ryc87mU2bg?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>
+    
+<!--7Iowa-->
+<section>  
+        <section data-autoslide="55000">
+            <h1>Hobo or Performer?</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/GcN9AiXD4Hg?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>
+<!--8Shaved girls-->
+<section data-autoslide="9000">  
+        <section data-autoslide="33000">
+            <h1> Do you Shave your armpits?</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/9q_8siRnw6Q?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+        <section>
+             <h1>Saving Razors = Saving Earth</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/R53CZ7YpM7M?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>          
+
+<!--8College girls-->
+<section>  
+        <section data-autoslide="110000">
+             <h1>OMG.. Climate Change</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/KrtL0h3glsA?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>          
+    
+<!--9 Hairy girls-->
+<section>  
+        <section data-autoslide="59000">
+               <h1>"Nudies For Nature"</h1>
+                    <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/ReQf9E7uOHs?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                    </iframe> 
+        </section>
+</section>             
+        
+<!--10 hatiMusician-->
+<section>  
+        <section data-autoslide="66000">
+                <h1>Hati Hippie</h1>
+            <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/pS4SzP2ACDo?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+            </iframe> 
+        </section>
+</section>     
+            
+<!--10 Monsanto-->
+<section>  
+        <section data-autoslide="61000">
+             <h1>Her > Monsanto</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/aRn8x6vzF-c?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>         
+    
+<!--12 Fractavist-->
+<section data-autoslide="109000">  
+        <section>
+             <h1>Old School Hippies.</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/--4t0eMr4XY?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>          
+            
+<!--13 Fractavist Bro-->
+<section data-autoslide="60000">  
+        <section>
+              <h1>Fractavist Bro of the year.</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/ymm2XEMQ_pI?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>  
+            
+<!--14 Canda-->
+<section data-autoslide="74000">  
+        <section>
+            <h1>The Canadian..</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/oiPWsODs8Lg?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>  
+            
+<!--15 Willie Nelson-->
+<section data-autoslide="134000">  
+        <section>
+            <h1>Wise old Hippie</h1>
+                <iframe width="1700px" height="1200px" src="https://www.youtube.com/embed/r9MCDQk3l7s?autoplay=0&controls=0&showinfo=0&autohide=1" data-autoplay frameborder="0">
+                </iframe> 
+        </section>
+</section>          
+
+    
+    
+    </div>
+</div>
+</body>
+</html>
+</html>

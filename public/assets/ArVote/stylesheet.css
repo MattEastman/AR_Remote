@@ -1,0 +1,284 @@
+/*CSS Stylesheet */
+
+body {  height: 80%; 
+        margin: 0;
+        overflow:hidden;
+}
+ul, ol {list-style: none;}
+.clearfix {clear: both;}
+
+
+/*
+nav ul li {
+    min-width:60px;
+    border:1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+article {
+    width:220px;
+    height:300px;
+    border: 1px solid black;
+    background-color: #ccc;
+}
+#flexwrapper {
+    display:flex;
+    justify-content: space-around;
+}
+nav ul {
+    display:flex;
+    justify-content: center;
+    padding-left: 0;
+}
+nav ul > * {
+/*flex: 1 0 auto;   
+}
+*/
+
+#container {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ccc;
+/*    min-height: 70px;*/
+    zoom:100%;
+    margin-top: 170px;
+}
+
+header {
+margin-bottom: -160px;
+    padding-top: 150px;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(66,175,250, 1.0);
+   }
+.twitter img {
+    display: inline;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top:2%;
+    right:4%;
+    border-radius: 200px;
+    z-index: 99999999;
+    border:2px solid white;
+}
+.twitter img:hover {
+    box-shadow: 3px 3px 4px grey;
+}
+.q1{
+    display: inline-block;
+    width: 48%;
+    float: left;
+     padding-left: 1%;
+    padding-right: 1%;
+/*    max-width: 350px;*/
+    padding-bottom: 2%;  
+}
+
+.q3{
+    display: inline-block;
+    width: 48%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+/*    max-width: 350px;*/
+    padding-bottom: 32%;  
+}
+.q2 {
+    display: inline-block;
+    width: 48%;
+    float: right;
+    padding-right: 1%;
+     padding-left: 1%;
+/*       max-width: 350px;*/
+      padding-bottom: 2%;
+}
+.q4 {
+    display: inline-block;
+    width: 48%;
+    float: right;
+    padding-right: 1%;
+     padding-left: 1%;
+/*       max-width: 350px;*/
+      padding-bottom: 32%;
+}
+
+
+
+
+
+
+/**** big screen ****************************************************/
+
+@media(min-width: 1700px){ 
+#container {
+    width: 75%;
+    height: 75%;
+    margin: 0 auto;
+    text-align: center;
+/*    background-color: #ccc;*/
+    min-height: 70px;
+    zoom:150%;
+    margin-top: 155px;
+}
+.q1{
+display: inline-block;
+    width: 40%;
+    float: left;
+    padding-left: 7%;
+    padding-right: 3%;
+    max-width: 450px;
+    padding-bottom: 2%;  
+}
+
+.q3{
+display: inline-block;
+    width: 40%;
+    float: left;
+    padding-left: 7%;
+    padding-right: 3%;
+    max-width: 450px;
+    padding-bottom: 2%;  
+}
+
+.q2 {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    padding-right: 7%;
+     padding-left: 3%;
+       max-width: 450px;
+      padding-bottom: 2%;
+}
+
+.q4 {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    padding-right: 7%;
+     padding-left: 3%;
+       max-width: 450px;
+      padding-bottom: 2%;
+}
+}
+
+/**** Phone Hoizontal ****************************************************/
+@media(max-width: 700px){ 
+
+.q1 {
+    width: 90%;
+    padding-right: 5%;
+     padding-left: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.q3 {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.q2 {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%; 
+    padding-bottom: 1%;
+    padding-top: 1%;
+} 
+.q4 {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%; 
+    padding-bottom: 1%;
+    padding-top: 1%;
+} 
+.twitter img {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top:10%;
+    left:7%;
+    border-radius: 200px;
+}
+}
+
+/**** Phone V ****************************************************/
+@media(max-width: 500px){ 
+body {
+
+}
+    
+    #container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ccc;
+/*    min-height: 70px;*/
+       margin-top: 170px;
+}
+
+header {
+margin-bottom: -160px;
+    padding-top: 150px;
+}
+p{
+    text-align: center;
+    font-size: 40px;
+/*    color: rgba(66,175,250, 1.0);*/
+   }
+.twitter img:hover {
+    box-shadow: 3px 3px 4px grey;
+}    
+.q1 {
+    display: block;
+    min-width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.q3 {
+    display: block;
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+.q2 {
+    display: block;
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%; 
+    padding-bottom: 1%;
+    padding-top: 1%;
+}     
+.q4 {
+    display: block;
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%; 
+    padding-bottom: 1%;
+    padding-top: 1%;
+} 
+    
+.twitter img {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top:10%;
+    left:7%;
+    border-radius: 200px;
+}
+    
+
+
+    
+}
